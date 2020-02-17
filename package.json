@@ -1,0 +1,33 @@
+{
+  "name": "@gorilainvest/styles",
+  "version": "0.0.0",
+  "description": "Gorila invest package to hold styles like colors, mixins, variables, etc for all stylesheets technology (SASS, Stylus, CSS-in-JS, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "lint:scss": "stylelint scss/**/*.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gorilainvest/styles.git"
+  },
+  "keywords": [
+    "style",
+    "stylesheet",
+    "sass"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorilainvest/styles/issues"
+  },
+  "homepage": "https://github.com/gorilainvest/styles#readme",
+  "files": [
+    "scss/**/*.scss"
+  ],
+  "dependencies": {
+    "stylelint": "^13.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-order": "^4.0.0"
+  }
+}
