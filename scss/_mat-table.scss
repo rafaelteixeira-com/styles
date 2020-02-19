@@ -158,28 +158,6 @@
   }
 }
 
-dashboard .mat-table .mat-cell:first-child {
-  line-height: 180%;
-}
-
-@media screen and (max-height: 768px) {
-  advanced-profitability .mat-table mat-header-cell {
-    font-size: 7px;
-
-    /* stylelint-disable selector-max-compound-selectors */
-    .header-cell {
-      margin-top: 4%;
-    }
-    /* stylelint-enable selector-max-compound-selectors */
-  }
-}
-
-@media screen and (min-height: 769px) {
-  advanced-profitability .mat-table .mat-cell:first-child {
-    line-height: 180%;
-  }
-}
-
 // Material style reset
 
 mat-footer-row::after,
