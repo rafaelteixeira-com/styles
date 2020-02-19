@@ -109,7 +109,7 @@
 }
 
 .mat-table.dark {
-  background: map-get($neutral-colors, normal);
+  background: $dark-gray;
 
   mat-header-cell,
   mat-cell {
