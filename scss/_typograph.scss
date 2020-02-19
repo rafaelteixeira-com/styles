@@ -1,0 +1,43 @@
+@import 'colors';
+
+option {
+  width: 30px;
+  height: 17px;
+
+  color: $extra-dark-gray;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: Lato;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+@mixin title {
+  font-family: Lato;
+}
+
+.dropdown-title {
+  @include title;
+  font-size: 14px;
+}
+
+.dropdown-subtitle {
+  @include title;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.filter-label {
+  @include title;
+  color: $dark-gray;
+  font-size: 12px;
+}
+
+.order {
+  /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+  @extend .dropdown-title;
+  color: #555b5b;
+}
