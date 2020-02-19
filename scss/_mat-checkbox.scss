@@ -1,0 +1,150 @@
+@import 'colors';
+
+mat-checkbox {
+  .mat-checkbox-inner-container {
+    width: 15px;
+    height: 15px;
+  }
+
+  .mat-checkbox-background {
+    border: 1px solid $extra-dark-gray;
+  }
+
+  .mat-checkbox-background,
+  .mat-checkbox-frame {
+    border-radius: 7px;
+  }
+
+  .mat-checkbox-frame {
+    border-color: #e1e1e1;
+    border-width: 1px;
+  }
+
+  label {
+    font-weight: 400;
+  }
+
+  /* stylelint-disable selector-no-qualifying-type */
+  &.mat-checkbox {
+    font-weight: 400;
+    font-family: Lato, 'Helvetica Neue', sans-serif;
+  }
+
+  &.mat-checkbox-checked .mat-checkbox-background {
+    border: 0;
+  }
+}
+
+mat-checkbox.round-sm {
+  .mat-checkbox-inner-container {
+    margin-right: 0;
+  }
+
+  .mat-checkbox-label {
+    font-size: 10px;
+    padding-bottom: 3px;
+  }
+
+  .mat-checkbox-frame,
+  .mat-checkbox-background {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+
+mat-checkbox.round-md {
+  .mat-checkbox-inner-container {
+    margin-right: 4px;
+  }
+
+  .mat-checkbox-label {
+    font-size: 12px;
+    padding-bottom: 3px;
+  }
+
+  .mat-checkbox-frame,
+  .mat-checkbox-background {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+  }
+}
+
+mat-checkbox.round-lg {
+  .mat-checkbox-label {
+    font-size: 14px;
+  }
+
+  .mat-checkbox-frame,
+  .mat-checkbox-background {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+  }
+
+  .mat-checkbox-layout {
+    margin-top: 5px;
+  }
+}
+
+mat-checkbox.dark-text {
+  .mat-checkbox-label {
+    color: $extra-dark-gray;
+  }
+}
+
+mat-checkbox.light-text {
+  .mat-checkbox-label {
+    color: $dark-gray;
+  }
+}
+
+mat-checkbox.gorila-gradient {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-image: linear-gradient(to right, $gorila-primary, $gorila-secondary);
+  }
+}
+
+mat-checkbox.darkblue {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $cash-primary;
+  }
+}
+
+mat-checkbox.blue {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $fixed-income-primary;
+  }
+}
+
+mat-checkbox.lightblue {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $multimarket-primary;
+  }
+}
+
+mat-checkbox.pink {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $stocks-primary;
+  }
+}
+
+mat-checkbox.yellow {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $currency-primary;
+  }
+}
+
+mat-checkbox.red {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $tangible-primary;
+  }
+}

@@ -1,0 +1,10 @@
+@import 'colors';
+
+.mat-calendar-body-cell-content.mat-calendar-body-selected {
+  color: $white;
+}
+
+gor-calendar-header .mat-calendar-previous-button,
+gor-calendar-header .mat-calendar-next-button {
+  color: transparent;
+}

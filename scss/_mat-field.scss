@@ -1,0 +1,177 @@
+@import 'colors';
+@import 'typograph';
+
+mat-form-field,
+mat-select {
+  font-family: Lato !important;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field-placeholder {
+  color: $dark-gray !important;
+  font-weight: normal;
+  font-size: 10px !important;
+  font-family: Lato !important;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+
+  &:not(.mat-form-field-empty) {
+    text-transform: uppercase;
+  }
+
+  &.mat-form-field-empty {
+    font-size: 12px !important;
+  }
+
+  &:not(.mat-empty) {
+    transform: translateY(-1.28125em) scale(1) perspective(100px) translateZ(0.001px) !important;
+  }
+}
+
+//use class="dark-bg" in <mat-price-format> or <mat-date-format> when these components have a dark background
+.dark-bg .mat-form-field-placeholder {
+  color: #f2f2f2 !important;
+}
+
+.mat-select-panel {
+  max-height: 295px !important;
+}
+
+.select-panel-products {
+  max-height: 61vh !important;
+}
+
+.mat-input-infix.mat-form-field-infix {
+  padding: 0.375em 0 0.275em !important;
+}
+
+.mat-option {
+  &:not(.multiline) {
+    height: 30px !important;
+
+    line-height: 30px !important;
+  }
+
+  &.multiline {
+    height: auto !important;
+    padding: 5px 4px 8px 6px;
+
+    line-height: normal !important;
+  }
+
+  &.multiline .dropdown-title {
+    height: 17px !important;
+
+    line-height: 17px !important;
+  }
+
+  &.multiline .dropdown-subtitle {
+    height: 12px !important;
+
+    line-height: 12px !important;
+  }
+
+  &.multiline .mat-option-text {
+    height: 29px !important;
+
+    line-height: 29px !important;
+  }
+
+  /* stylelint-disable scss/at-extend-no-missing-placeholder */
+  .mat-option-text {
+    @extend .dropdown-title;
+  }
+  /* stylelint-enable scss/at-extend-no-missing-placeholder */
+
+  &:hover:not(.mat-option-disabled),
+  &:focus:not(.mat-option-disabled) {
+    background: inherit;
+  }
+
+  &:hover:not(.mat-option-disabled) .mat-option-text,
+  &:focus:not(.mat-option-disabled) .mat-option-text {
+    color: inherit;
+  }
+
+  /* stylelint-disable scss/at-extend-no-missing-placeholder */
+  &.mat-active {
+    @extend .asset-bg-opacity;
+  }
+  /* stylelint-enable scss/at-extend-no-missing-placeholder */
+
+  &.mat-active .mat-option-text {
+    color: $extra-dark-gray;
+  }
+
+  /* stylelint-disable scss/at-extend-no-missing-placeholder */
+  &:not(.mat-active):hover .mat-option-text,
+  &:not(.mat-active):focus .mat-option-text {
+    @extend .asset-color;
+  }
+  /* stylelint-enable scss/at-extend-no-missing-placeholder */
+}
+
+.mat-radio-label-content {
+  padding-right: 4px !important;
+  padding-left: 4px !important;
+}
+
+mat-date-format .mat-input-infix.mat-form-field-infix,
+mat-price-format .mat-input-infix.mat-form-field-infix {
+  padding: 0.575em 0 0.1em !important;
+}
+
+.mat-radio-title {
+  padding: 0.375em 0 0.275em;
+
+  color: $dark-gray;
+  font-weight: normal;
+  font-size: 8px;
+  font-family: Lato;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.mat-slide-toggle-thumb-container {
+  top: 1px !important;
+  left: 1px !important;
+
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.mat-slide-toggle-thumb {
+  width: 13px !important;
+  height: 13px !important;
+
+  background-color: $white !important;
+  box-shadow: 0 0 4px 0 $lightbox !important;
+}
+
+.mat-slide-toggle-bar.mat-slide-toggle-bar-no-side-margin {
+  width: 28px !important;
+  height: 15px !important;
+
+  background-color: #415761 !important;
+  border-radius: 7.5px !important;
+}
+
+.mat-checked {
+  .mat-slide-toggle-thumb-container {
+    left: -2px !important;
+  }
+
+  .mat-slide-toggle-bar.mat-slide-toggle-bar-no-side-margin {
+    background-color: $gorila-primary !important;
+  }
+}
+

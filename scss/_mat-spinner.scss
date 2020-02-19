@@ -1,0 +1,6 @@
+@import 'colors';
+
+.mat-spinner circle,
+.mat-progress-spinner circle {
+  stroke: $white;
+}
