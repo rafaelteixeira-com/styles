@@ -1,5 +1,8 @@
 @import 'colors';
 
+$default-font-family: Lato;
+$default-font-color: $extra-dark-gray;
+
 option {
   width: 30px;
   height: 17px;
@@ -7,7 +10,7 @@ option {
   color: $extra-dark-gray;
   font-weight: normal;
   font-size: 14px;
-  font-family: Lato;
+  font-family: $default-font-family;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
@@ -16,7 +19,7 @@ option {
 }
 
 @mixin title {
-  font-family: Lato;
+  font-family: $default-font-family;
 }
 
 .dropdown-title {
