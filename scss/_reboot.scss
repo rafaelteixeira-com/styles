@@ -1,0 +1,53 @@
+@import 'typograph';
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.label {
+  font-family: $default-font-family;
+  color: $default-font-color;
+}
+
+body {
+  line-height: 24px;
+  font-size: 16px;
+}
+
+h1 {
+  line-height: 58px;
+  font-size: 48px;
+}
+
+h2 {
+  line-height: 46px;
+  font-size: 40px;
+}
+
+h3 {
+  line-height: 38px;
+  font-size: 32px;
+}
+
+h4 {
+  line-height: 34px;
+  font-size: 28px;
+}
+
+h5 {
+  line-height: 28px;
+  font-size: 24px;
+}
+
+h6 {
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.label {
+  line-height: 14px;
+  font-size: 10px;
+}
