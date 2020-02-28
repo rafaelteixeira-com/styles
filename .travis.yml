@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- 10
+cache:
+  npm: true
+  directories:
+  - "~/.cache"
+dist: trusty
+sudo: required
+script:
+- npm install
+- npm run lint:scss
+deploy:
+  provider: npm
+  email: it+npm@gorilainvest.com.br
+  api_key:
+    secure: EHmA7SFtQu3pC6nHo/FJ0utoSf865eTGP6XzfF8+0OqX+n0P2S9ftHGtI4nk0EJPdXOieqE7mVza5OVtkQvH7yyqKR4g78DSb33h9qGTLFvaVa4OnK6+EbbSYEKyjyrAZ0TsLQAVf5ZYMv2RgRNWLfc/TUibjZCsccVRG6Jy8EeSkXRWEev9Tv7TlK9aoDFt6L9YP1lmT5UMLTm21B4YDlkLSMQ9vry/GrbjeOVNsbZB2dlHQp0lL+Shq1WS0U40fsNQBpvLZ61MHcZ05yIq8dMpkdPB7Depytc8QiypB7OUVLJx9vt8KrZWfYhhyxjQkNF0yWIsn1IktzCSO1dHuvh5BmMCNXNu1zonBOP/EGIUe3c4dsv3HJnf51rKkD0uDflnWyBuRJ49XvhlC/DkCi3qxLTPgVBC3gc0Xnn469EF14aJ5yTXqBg4Cl/T2MJpQhtZrRkLdamSi1EIEnfiYgsc8sM1lIVQOf2cA5aMKB8r9/2uZhq9tD2DgMS1hREn6bi5cpNFqmc51QjKfZrANzLGh5PAfxFaY9UxoV9D/VAGDQCOIdwZbZoPMOWQ1YJX+Xfb+J8QybU85wsqJ9Ku/296eKnu7RIs6GrOwDvtiuRokHoZDSEVlasG4JN0a7w7Nu/c1MLb5oJ65L2orrcAqW9g2hLZhyiwFRiYjkeO4EM=
+  on:
+    tags: true
+    repo: gorilainvest/styles
