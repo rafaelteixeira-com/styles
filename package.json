@@ -4,7 +4,8 @@
   "description": "Gorila invest package to hold styles like colors, mixins, variables, etc for all stylesheets technology (SASS, Stylus, CSS-in-JS, etc.)",
   "main": "index.js",
   "scripts": {
-    "lint:scss": "stylelint scss/**/*.scss"
+    "lint:scss": "stylelint scss/**/*.scss",
+    "lint:scss:fix": "stylelint scss/**/*.scss --fix"
   },
   "repository": {
     "type": "git",

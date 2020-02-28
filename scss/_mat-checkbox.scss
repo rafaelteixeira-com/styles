@@ -41,14 +41,16 @@ mat-checkbox.round-sm {
   }
 
   .mat-checkbox-label {
-    font-size: 10px;
     padding-bottom: 3px;
+
+    font-size: 10px;
   }
 
   .mat-checkbox-frame,
   .mat-checkbox-background {
     width: 12px;
     height: 12px;
+
     border-radius: 6px;
   }
 }
@@ -59,14 +61,16 @@ mat-checkbox.round-md {
   }
 
   .mat-checkbox-label {
-    font-size: 12px;
     padding-bottom: 3px;
+
+    font-size: 12px;
   }
 
   .mat-checkbox-frame,
   .mat-checkbox-background {
     width: 14px;
     height: 14px;
+
     border-radius: 7px;
   }
 }
@@ -80,6 +84,7 @@ mat-checkbox.round-lg {
   .mat-checkbox-background {
     width: 16px;
     height: 16px;
+
     border-radius: 8px;
   }
 
