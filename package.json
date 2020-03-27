@@ -28,6 +28,7 @@
     "scss/**/*.scss"
   ],
   "dependencies": {
+    "husky": "^4.2.3",
     "stylelint": "^13.2.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-sass-guidelines": "^7.0.0",

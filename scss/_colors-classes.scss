@@ -33,36 +33,36 @@
   }
 }
 
-@mixin generate-asset-bg($opacity_primary) {
-  background-color: rgba(map-get($asset-colors-primary, default), $opacity_primary) !important;
+@mixin generate-asset-bg($opacity-primary) {
+  background-color: rgba(map-get($asset-colors-primary, default), $opacity-primary) !important;
 
   &.cash {
-    background-color: rgba(map-get($asset-colors-primary, cash), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-primary) !important;
   }
 
   &.currency {
-    background-color: rgba(map-get($asset-colors-primary, currency), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-primary) !important;
   }
 
   /* stylelint-disable-next-line selector-class-pattern */
   &.fixed_income {
-    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-primary) !important;
   }
 
   &.multimarket {
-    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-primary) !important;
   }
 
   &.stocks {
-    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-primary) !important;
   }
 
   &.tangible {
-    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
   }
 
   &.benchmark {
-    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
   }
 }
 
@@ -76,8 +76,8 @@
 }
 
 .asset-bg-ribbon {
-  $opacity_primary: 1;
-  $opacity_secondary: 0.15;
+  $opacity-primary: 1;
+  $opacity-secondary: 0.15;
   display: flex;
   align-items: center;
 
@@ -90,74 +90,74 @@
   }
 
   &:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, default), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, default), $opacity-primary) !important;
   }
 
   &.cash:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, cash), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-primary) !important;
   }
 
   &.currency:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, currency), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-primary) !important;
   }
 
   /* stylelint-disable-next-line selector-class-pattern */
   &.fixed_income:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-primary) !important;
   }
 
   &.multimarket:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-primary) !important;
   }
 
   &.stocks:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-primary) !important;
   }
 
   &.tangible:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
   }
 
   &.benchmark:not(.secondary)::before {
-    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity_primary) !important;
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
   }
 
   &.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, default), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, default), $opacity-secondary) !important;
   }
 
   &.cash.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, cash), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-secondary) !important;
   }
 
   &.currency.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, currency), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-secondary) !important;
   }
 
   /* stylelint-disable-next-line selector-class-pattern */
   &.fixed_income.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-secondary) !important;
   }
 
   &.multimarket.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-secondary) !important;
   }
 
   &.stocks.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-secondary) !important;
   }
 
   &.tangible::before {
-    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-secondary) !important;
   }
 
   &.benchmark.secondary::before {
-    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity_secondary) !important;
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-secondary) !important;
   }
 
 }
 
-.asset-bg-opacity_primary {
+.asset-bg-opacity {
   @include generate-asset-bg(0.15);
 }
 
