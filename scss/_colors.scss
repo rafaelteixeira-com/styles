@@ -17,6 +17,8 @@ $cash-primary: #314a61;
 $cash-secondary: #456888;
 $tangible-primary: #df5e3d;
 $tangible-secondary: #e05f3e;
+$benchmark-primary: #777878;
+$benchmark-secondary: #a3a5a6;
 
 /**
 * GRAY SCALE
@@ -29,3 +31,33 @@ $medium-gray: #cacbcc;
 $very-light-gray: #dedede;
 $base-background: #f1f1f1;
 $white: #fff;
+$neutral-colors: ( 
+  darkest: $black, 
+  darker: $extra-dark-gray, 
+  dark: #555b5b, 
+  normal: $dark-gray, 
+  light: #d6d4d5, 
+  ligher: #f0f0f0, 
+  lightest: $white
+);
+
+$asset-colors-primary: (
+  benchmark: $benchmark-primary,
+  cash: $cash-primary,
+  currency: $currency-primary,
+  default: $gorila-primary,
+  fixed_income: $fixed-income-primary,
+  multimarket: $multimarket-primary,
+  stocks: $stocks-primary,
+  tangible: $tangible-primary,
+);
+$asset-colors-secondary: (
+  benchmark: $benchmark-primary,
+  cash: $cash-secondary,
+  currency: $currency-secondary,
+  default: $gorila-secondary,
+  fixed_income: $fixed-income-secondary,
+  multimarket: $multimarket-secondary,
+  stocks: $stocks-secondary,
+  tangible: $tangible-secondary,
+);

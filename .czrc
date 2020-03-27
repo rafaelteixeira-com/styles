@@ -1,0 +1,12 @@
+{
+  "extends": "@endemolshinegroup/cz-jira-smart-commit",
+  "@endemolshinegroup/cz-jira-smart-commit": {
+    "pullRequestsOnly": true,
+    "scopes": {
+      "config": "For changes in configuration files",
+      "ci": "For changes in ci configurations",
+      "dependencies": "For changes in dependencies only",
+      "scss": "For changes in scss files"
+    }
+  }
+}

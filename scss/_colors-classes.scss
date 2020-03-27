@@ -1,0 +1,252 @@
+@import 'colors';
+
+.asset-color {
+  color: map-get($asset-colors-primary, default) !important;
+
+  &.cash {
+    color: map-get($asset-colors-primary, cash) !important;
+  }
+
+  &.currency {
+    color: map-get($asset-colors-primary, currency) !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income {
+    color: map-get($asset-colors-primary, fixed_income) !important;
+  }
+
+  &.multimarket {
+    color: map-get($asset-colors-primary, multimarket) !important;
+  }
+
+  &.stocks {
+    color: map-get($asset-colors-primary, stocks) !important;
+  }
+
+  &.tangible {
+    color: map-get($asset-colors-primary, tangible) !important;
+  }
+
+  &.benchmark {
+    color: map-get($asset-colors-primary, benchmark) !important;
+  }
+}
+
+@mixin generate-asset-bg($opacity-primary) {
+  background-color: rgba(map-get($asset-colors-primary, default), $opacity-primary) !important;
+
+  &.cash {
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-primary) !important;
+  }
+
+  &.currency {
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-primary) !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income {
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-primary) !important;
+  }
+
+  &.multimarket {
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-primary) !important;
+  }
+
+  &.stocks {
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-primary) !important;
+  }
+
+  &.tangible {
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
+  }
+
+  &.benchmark {
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
+  }
+}
+
+%asset-bg {
+  @include generate-asset-bg(1);
+  color: $white;
+}
+
+.asset-bg {
+  @extend %asset-bg;
+}
+
+.asset-bg-ribbon {
+  $opacity-primary: 1;
+  $opacity-secondary: 0.15;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    width: 4px;
+    min-height: 25px;
+    margin-right: 4px;
+
+    content: '';
+  }
+
+  &:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, default), $opacity-primary) !important;
+  }
+
+  &.cash:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-primary) !important;
+  }
+
+  &.currency:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-primary) !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-primary) !important;
+  }
+
+  &.multimarket:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-primary) !important;
+  }
+
+  &.stocks:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-primary) !important;
+  }
+
+  &.tangible:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
+  }
+
+  &.benchmark:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
+  }
+
+  &.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, default), $opacity-secondary) !important;
+  }
+
+  &.cash.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-secondary) !important;
+  }
+
+  &.currency.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-secondary) !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-secondary) !important;
+  }
+
+  &.multimarket.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-secondary) !important;
+  }
+
+  &.stocks.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-secondary) !important;
+  }
+
+  &.tangible::before {
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-secondary) !important;
+  }
+
+  &.benchmark.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-secondary) !important;
+  }
+
+}
+
+.asset-bg-opacity {
+  @include generate-asset-bg(0.15);
+}
+
+@mixin generate-asset-gradient($type) {
+  $color1: map-get($asset-colors-primary, $type);
+  $color2: map-get($asset-colors-secondary, $type);
+  $c1: rgba($color1, 1);
+  $c2: rgba($color2, 1);
+  background: linear-gradient(90deg, $c1, $c2) !important;
+}
+
+.asset-gradient {
+  @include generate-asset-gradient(default);
+
+  &.currency {
+    @include generate-asset-gradient(currency);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income {
+    @include generate-asset-gradient(fixed_income);
+  }
+
+  &.multimarket {
+    @include generate-asset-gradient(multimarket);
+  }
+
+  &.stocks {
+    @include generate-asset-gradient(stocks);
+  }
+
+  &.benchmark {
+    @include generate-asset-gradient(benchmark);
+  }
+
+  &.cash {
+    @include generate-asset-gradient(cash);
+  }
+
+  &.tangible {
+    @include generate-asset-gradient(tangible);
+  }
+}
+
+@mixin generate-animated-asset-gradient($type) {
+  $color1: map-get($asset-colors-primary, $type);
+  $color2: map-get($asset-colors-secondary, $type);
+  $c1: rgba($color1, 1);
+  $c2: rgba($color2, 1);
+  background-image: linear-gradient(to right, $c2 0%, $c1 51%, $c2 100%) !important;
+}
+
+.animated-asset-gradient {
+  @include generate-animated-asset-gradient(default);
+  background-size: 200% auto;
+
+  transition: 0.5s;
+
+  &:hover {
+    background-position: right center !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+
+  &.currency {
+    @include generate-animated-asset-gradient(currency);
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income {
+    @include generate-animated-asset-gradient(fixed_income);
+  }
+
+  &.multimarket {
+    @include generate-animated-asset-gradient(multimarket);
+  }
+
+  &.stocks {
+    @include generate-animated-asset-gradient(stocks);
+  }
+
+  &.benchmark {
+    @include generate-animated-asset-gradient(benchmark);
+  }
+
+  &.cash {
+    @include generate-animated-asset-gradient(cash);
+  }
+
+  &.tangible {
+    @include generate-animated-asset-gradient(tangible);
+  }
+}

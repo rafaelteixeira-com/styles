@@ -1,11 +1,13 @@
 {
   "name": "@gorilainvest/styles",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Gorila invest package to hold styles like colors, mixins, variables, etc for all stylesheets technology (SASS, Stylus, CSS-in-JS, etc.)",
   "main": "index.js",
   "scripts": {
     "lint:scss": "stylelint scss/**/*.scss",
-    "lint:scss:fix": "stylelint scss/**/*.scss --fix"
+    "lint:scss:fix": "stylelint scss/**/*.scss --fix",
+    "build": "sass --update scss:css",
+    "dev": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "scss/**/*.scss"
   ],
   "dependencies": {
+    "husky": "^4.2.3",
     "stylelint": "^13.2.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-sass-guidelines": "^7.0.0",
