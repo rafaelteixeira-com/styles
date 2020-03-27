@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "lint:scss": "stylelint scss/**/*.scss",
-    "lint:scss:fix": "stylelint scss/**/*.scss --fix"
+    "lint:scss:fix": "stylelint scss/**/*.scss --fix",
+    "build": "sass --update scss:css",
+    "dev": "sass --watch scss:css"
   },
   "repository": {
     "type": "git",

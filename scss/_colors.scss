@@ -29,3 +29,34 @@ $medium-gray: #cacbcc;
 $very-light-gray: #dedede;
 $base-background: #f1f1f1;
 $white: #fff;
+
+$asset-colors-primary: (
+  benchmark: #777878,
+  cash: $cash-primary,
+  currency: $currency-primary,
+  default: $gorila-primary,
+  fixed_income: $fixed-income-primary,
+  multimarket: $multimarket-primary,
+  stocks: $stocks-primary,
+  tangible: $tangible-primary,
+);
+$asset-colors-secondary: (
+  benchmark: #a3a5a6,
+  cash: $cash-secondary,
+  currency: $currency-secondary,
+  default: $gorila-secondary,
+  fixed_income: $fixed-income-secondary,
+  multimarket: $multimarket-secondary,
+  stocks: $stocks-secondary,
+  tangible: $tangible-secondary,
+);
+
+$neutral-colors: ( 
+    darkest: #000000, 
+    darker: $extra-dark-gray, 
+    dark: #555b5b, 
+    normal: $dark-gray, 
+    light: #d6d4d5, 
+    ligher: #f0f0f0, 
+    lightest: #ffffff
+);
