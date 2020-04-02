@@ -1,6 +1,6 @@
 {
   "name": "@gorilainvest/styles",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Gorila invest package to hold styles like colors, mixins, variables, etc for all stylesheets technology (SASS, Stylus, CSS-in-JS, etc.)",
   "main": "index.js",
   "scripts": {
