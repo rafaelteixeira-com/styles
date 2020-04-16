@@ -1,0 +1,17 @@
+// this file should include all files in scss folder
+// It's important to test if your scss file are compiling
+// use npm run build to test it
+// use npm run dev while you're writing your scss file
+
+@import 'colors-classes';
+@import 'colors';
+@import 'global';
+@import 'mat-calendar';
+@import 'mat-checkbox';
+@import 'mat-dialog';
+@import 'mat-field';
+@import 'mat-spinner';
+@import 'mat-table';
+@import 'mat-tooltip';
+@import 'reboot';
+@import 'typograph';

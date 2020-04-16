@@ -8,17 +8,19 @@ $base-padding: $base-padding-vertical $base-padding-horizontal;
 
 html,
 body {
+  height: 100%;
+
   font-size: 14px;
   font-family: Lato;
-  height: 100%;
   line-height: normal;
 }
 
 body {
-  margin: 0;
-  background-color: $base-background;
   display: block;
+  margin: 0;
   overflow-x: auto;
+
+  background-color: $base-background;
 }
 
 gorila-report-root {
@@ -27,34 +29,43 @@ gorila-report-root {
 }
 
 /*scrollbars*/
+/* stylelint-disable max-nesting-depth */
 html,
 body,
 div {
   &::-webkit-scrollbar {
     width: 8px;
+
     &:horizontal {
       height: 8px !important;
     }
   }
+
+  /* stylelint-disable property-no-vendor-prefix */
   &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px transparent !important;
-    box-shadow: inset 0 0 6px transparent !important;
     -webkit-border-radius: 6px !important;
     -moz-border-radius: 6px !important;
     border-radius: 6px !important;
+    -webkit-box-shadow: inset 0 0 6px transparent !important;
+    box-shadow: inset 0 0 6px transparent !important;
   }
+
   &::-webkit-scrollbar-track-piece {
     background-color: $very-light-gray !important;
     -webkit-border-radius: 6px !important;
     -moz-border-radius: 6px !important;
     border-radius: 6px !important;
   }
+
   &::-webkit-scrollbar-thumb {
+    height: 10vh !important;
+
     background-color: #999 !important; // manage scrollbar thumb background color here
     opacity: 0.9 !important;
-    height: 10vh !important;
   }
+  /* stylelint-enable property-no-vendor-prefix */
 }
+/* stylelint-enable max-nesting-depth */
 
 h1,
 h2,
@@ -62,10 +73,12 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0;
+
   color: $extra-dark-gray;
   font-weight: 300;
   text-align: left;
-  margin: 0;
+
   .highlight {
     font-weight: 500;
   }
@@ -96,9 +109,10 @@ h6 {
 }
 
 .amcharts-chart-div {
-  max-height: 100vh;
-  height: fit-content;
   width: fit-content;
+  height: fit-content;
+  max-height: 100vh;
+
   a {
     display: none !important;
   }
@@ -108,15 +122,18 @@ h6 {
   text-transform: capitalize;
 }
 
+/* stylelint-disable selector-no-qualifying-type*/
 div.mat-tooltip {
-  @extend .capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 0.714rem;
+  text-transform: capitalize;
+
   background-color: $extra-dark-gray;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.07);
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.714rem;
-  font-weight: 400;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
 }
+/* stylelint-enable selector-no-qualifying-type*/
 
 .router-container>dashboard {
   padding: 0;
@@ -130,30 +147,37 @@ div.mat-tooltip {
 
 .product-card {
   card-container {
-    overflow: initial;
     height: auto;
     height: 375px;
+    overflow: initial;
   }
+
   &:not(:last-child) {
     margin-right: 20px;
   }
 }
 
+/* stylelint-disable max-nesting-depth */
 .blotter-buttons {
   position: relative;
   bottom: 25px;
+
   text-align: center;
+
   .btn-blotter {
     padding: 15px;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
-    border-radius: 50%;
+
     background-image: linear-gradient(to right, #616767, #828888);
     border: unset;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+
     img {
       width: 25px;
       height: 25px;
     }
   }
+
   .remove-product {
     margin-left: 15px;
   }
@@ -163,68 +187,82 @@ div.mat-tooltip {
   display: flex;
   align-items: center;
   margin: 8px 0;
+
   p {
-    margin: 0 10px;
     display: flex;
     align-items: baseline;
+    margin: 0 10px;
+
     span {
       margin-left: 4px;
     }
   }
+
   hr {
     display: inline-block;
     flex-grow: 1;
     margin: 0;
     margin-top: 1px;
+
     border-top-color: #f3f3f3;
   }
+
   &.issuer-name hr {
     margin-top: 5px;
   }
+
   &.liquidity hr {
     margin-top: 10px;
   }
 }
+/* stylelint-enable max-nesting-depth */
 
 .featured-text {
   text-align: center;
 }
 
-.hidden{
-  display: none!important;
+.hidden {
+  display: none !important;
 }
 
 .text-bolder {
   font-weight: 900;
 }
+
 .text-default {
   color: $gorila-primary;
 }
+
 .text-error {
   color: $negative;
 }
+
+/* stylelint-disable max-nesting-depth */
 blotter-form {
   mat-date-format,
   mat-price-format {
     .mat-input-infix.mat-form-field-infix {
-      padding: 0.575em 0 0.1em 0 !important;
+      padding: 0.575em 0 0.1em !important;
     }
   }
 }
 
 blotter-success {
-  .product-title{
+  .product-title {
     margin: 7px 0;
+
     font-size: 18px;
     line-height: 18px;
   }
-  .ribbon{
+
+  .ribbon {
+    float: left;
     width: 3px;
     height: 20px;
-    float: left;
     margin-right: 5px;
   }
 }
+/* stylelint-enable max-nesting-depth */
 
 .height-auto {
   display: flex;
@@ -240,9 +278,11 @@ blotter-success {
 .rotate-90 {
   transform: rotate(90deg);
 }
+
 .rotate-180 {
   transform: rotate(180deg);
 }
+
 .rotate-270 {
   transform: rotate(270deg);
 }
