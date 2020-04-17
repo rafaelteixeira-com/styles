@@ -135,45 +135,6 @@ div.mat-tooltip {
 }
 /* stylelint-enable selector-no-qualifying-type*/
 
-/* stylelint-disable max-nesting-depth */
-.featured {
-  display: flex;
-  align-items: center;
-  margin: 8px 0;
-
-  p {
-    display: flex;
-    align-items: baseline;
-    margin: 0 10px;
-
-    span {
-      margin-left: 4px;
-    }
-  }
-
-  hr {
-    display: inline-block;
-    flex-grow: 1;
-    margin: 0;
-    margin-top: 1px;
-
-    border-top-color: #f3f3f3;
-  }
-
-  &.issuer-name hr {
-    margin-top: 5px;
-  }
-
-  &.liquidity hr {
-    margin-top: 10px;
-  }
-}
-/* stylelint-enable max-nesting-depth */
-
-.featured-text {
-  text-align: center;
-}
-
 .hidden {
   display: none !important;
 }
