@@ -1,0 +1,175 @@
+
+@import 'colors';
+
+//general
+$base-padding-horizontal: 40px;
+$base-padding-vertical: 0;
+$base-padding: $base-padding-vertical $base-padding-horizontal;
+
+html,
+body {
+  height: 100%;
+
+  font-size: 14px;
+  font-family: Lato;
+  line-height: normal;
+}
+
+body {
+  display: block;
+  margin: 0;
+  overflow-x: auto;
+
+  background-color: $base-background;
+}
+
+gorila-report-root {
+  display: block;
+  height: 100%;
+}
+
+/*scrollbars*/
+/* stylelint-disable max-nesting-depth */
+html,
+body,
+div {
+  &::-webkit-scrollbar {
+    width: 8px;
+
+    &:horizontal {
+      height: 8px !important;
+    }
+  }
+
+  /* stylelint-disable property-no-vendor-prefix */
+  &::-webkit-scrollbar-track {
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+    -webkit-box-shadow: inset 0 0 6px transparent !important;
+    box-shadow: inset 0 0 6px transparent !important;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: $very-light-gray !important;
+    -webkit-border-radius: 6px !important;
+    -moz-border-radius: 6px !important;
+    border-radius: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 10vh !important;
+
+    background-color: #999 !important; // manage scrollbar thumb background color here
+    opacity: 0.9 !important;
+  }
+  /* stylelint-enable property-no-vendor-prefix */
+}
+/* stylelint-enable max-nesting-depth */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+
+  color: $extra-dark-gray;
+  font-weight: 300;
+  text-align: left;
+
+  .highlight {
+    font-weight: 500;
+  }
+}
+
+h1 {
+  font-size: 3.429rem;
+}
+
+h2 {
+  font-size: 3.1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.1rem;
+}
+
+h5 {
+  font-size: 2.8rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+
+.amcharts-chart-div {
+  width: fit-content;
+  height: fit-content;
+  max-height: 100vh;
+
+  a {
+    display: none !important;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* stylelint-disable selector-no-qualifying-type*/
+div.mat-tooltip {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 0.714rem;
+  text-transform: capitalize;
+
+  background-color: $extra-dark-gray;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+}
+/* stylelint-enable selector-no-qualifying-type*/
+
+.hidden {
+  display: none !important;
+}
+
+.text-bolder {
+  font-weight: 900;
+}
+
+.text-default {
+  color: $gorila-primary;
+}
+
+.text-error {
+  color: $negative;
+}
+
+.height-auto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.height-reset.height-reset {
+  height: initial;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+}

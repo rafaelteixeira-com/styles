@@ -6,7 +6,7 @@
   "scripts": {
     "lint:scss": "stylelint scss/**/*.scss",
     "lint:scss:fix": "stylelint scss/**/*.scss --fix",
-    "build": "sass --update scss:css",
+    "build": "sass --update scss:css --style compressed",
     "dev": "sass --watch scss:css"
   },
   "repository": {
