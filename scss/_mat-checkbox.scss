@@ -112,6 +112,20 @@ mat-checkbox.gorila-gradient {
   }
 }
 
+mat-checkbox.gorila-primary {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $gorila-primary;
+  }
+}
+
+mat-checkbox.gorila-secondary {
+  &.mat-checkbox-checked .mat-checkbox-background,
+  &.mat-checkbox-indeterminate .mat-checkbox-background {
+    background-color: $gorila-secondary;
+  }
+}
+
 mat-checkbox.darkblue {
   &.mat-checkbox-checked .mat-checkbox-background,
   &.mat-checkbox-indeterminate .mat-checkbox-background {
