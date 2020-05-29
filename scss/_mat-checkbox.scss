@@ -115,14 +115,14 @@ mat-checkbox.gorila-gradient {
 mat-checkbox.gorila-primary {
   &.mat-checkbox-checked .mat-checkbox-background,
   &.mat-checkbox-indeterminate .mat-checkbox-background {
-    background-image: $gorila-primary;
+    background-color: $gorila-primary;
   }
 }
 
 mat-checkbox.gorila-secondary {
   &.mat-checkbox-checked .mat-checkbox-background,
   &.mat-checkbox-indeterminate .mat-checkbox-background {
-    background-image: $gorila-secondary;
+    background-color: $gorila-secondary;
   }
 }
 
