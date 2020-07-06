@@ -1,0 +1,37 @@
+@import 'colors';
+
+$label-width: 100px;
+
+mat-tab-group {
+  flex: 1;
+  height: 25px;
+}
+
+.mat-tab-header {
+  top: -1px;
+}
+
+.mat-tab-header,
+.mat-tab-label {
+  height: 25px !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+  min-width: $label-width;
+
+  background-color: $gorila-primary;
+}
+
+.mat-tab-label {
+  min-width: $label-width !important;
+}
+
+.mat-tab-label-content {
+  color: $dark-gray;
+  font-size: 12px;
+  font-family: Lato;
+}
+
+.mat-tab-label-active .mat-tab-label-content {
+  color: $gorila-primary;
+}
