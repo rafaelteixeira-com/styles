@@ -6,8 +6,8 @@
   "scripts": {
     "lint:scss": "stylelint scss/**/*.scss",
     "lint:scss:fix": "stylelint scss/**/*.scss --fix",
-    "build": "sass --update scss:css --style compressed",
-    "dev": "sass --watch scss:css"
+    "build": "sass --update scss:css --style compressed --load-path=node_modules",
+    "dev": "sass --watch scss:css --load-path=node_modules"
   },
   "repository": {
     "type": "git",
