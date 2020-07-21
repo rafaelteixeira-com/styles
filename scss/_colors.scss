@@ -67,3 +67,10 @@ $asset-colors-secondary: (
   stocks: $stocks-secondary,
   tangible: $tangible-secondary,
 );
+
+/**
+* BUTTONS COLORS
+*/
+$primary-button: $gorila-primary;
+$secondary-button: #636969;
+$disabled-button: $very-light-gray;
