@@ -37,5 +37,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@angular/material": "^10.1.0"
   }
 }
