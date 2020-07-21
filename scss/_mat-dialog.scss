@@ -1,3 +1,8 @@
 .no-padding-dialog .mat-dialog-container {
   padding: 0;
 }
+
+.mat-dialog-title {
+  font-family: inherit;
+  line-height: 1.23;
+}
