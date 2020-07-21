@@ -32,5 +32,8 @@ declare namespace _default {
     export const BuySecondary: string;
     export const SellPrimary: string;
     export const SellSecondary: string;
+    export const PrimaryButton: string;
+    export const SecondaryButton: string;
+    export const DisabledButton: string;
 }
 export default _default;
