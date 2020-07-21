@@ -1,0 +1,32 @@
+@import 'src/styles/colors';
+
+.skeleton {
+  position: relative;
+
+  background-color: $backgroundDefault;
+  border-radius: 0;
+
+  &::after {
+    position: absolute;
+    top: 0;
+
+    display: block;
+
+    width: 50%;
+    height: 100%;
+
+
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+
+    animation: loading 1s infinite;
+
+    content: '';
+  }
+}
+
+
+@keyframes loading {
+  100% {
+    transform: translateX(116%);
+  }
+}
