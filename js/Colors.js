@@ -27,5 +27,8 @@ export default {
     BuyPrimary: '#10c0c6',
     BuySecondary: '#4dde90',
     SellPrimary: '#f63855',
-    SellSecondary: '#f57439'
+    SellSecondary: '#f57439',
+    PrimaryButton: '#10c0c6',
+    SecondaryButton: '#636969',
+    DisabledButton: '#dedede'
 };

@@ -1,0 +1,50 @@
+@import 'colors';
+
+@mixin generate-asset-bg($opacity-primary) {
+  background-color: rgba(map-get($asset-colors-primary, default), $opacity-primary) !important;
+
+  &.cash {
+    background-color: rgba(map-get($asset-colors-primary, cash), $opacity-primary) !important;
+  }
+
+  &.currency {
+    background-color: rgba(map-get($asset-colors-primary, currency), $opacity-primary) !important;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.fixed_income {
+    background-color: rgba(map-get($asset-colors-primary, fixed_income), $opacity-primary) !important;
+  }
+
+  &.multimarket {
+    background-color: rgba(map-get($asset-colors-primary, multimarket), $opacity-primary) !important;
+  }
+
+  &.stocks {
+    background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-primary) !important;
+  }
+
+  &.tangible {
+    background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
+  }
+
+  &.benchmark {
+    background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
+  }
+}
+
+@mixin generate-asset-gradient($type) {
+  $color1: map-get($asset-colors-primary, $type);
+  $color2: map-get($asset-colors-secondary, $type);
+  $c1: rgba($color1, 1);
+  $c2: rgba($color2, 1);
+  background: linear-gradient(90deg, $c1, $c2) !important;
+}
+
+@mixin generate-animated-asset-gradient($type) {
+  $color1: map-get($asset-colors-primary, $type);
+  $color2: map-get($asset-colors-secondary, $type);
+  $c1: rgba($color1, 1);
+  $c2: rgba($color2, 1);
+  background-image: linear-gradient(to right, $c2 0%, $c1 51%, $c2 100%) !important;
+}

@@ -1,0 +1,153 @@
+@import 'colors';
+
+.amcharts-graph-bullet {
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    fill-opacity: 0.8;
+    stroke-opacity: 1;
+    stroke-width: 4px;
+  }
+}
+
+.amcharts-graph-bullet {
+  fill: $body;
+  stroke: #ededed;
+  stroke-opacity: 0;
+
+  :hover {
+    stroke-opacity: 0.9;
+  }
+}
+
+.amcharts-category-axis {
+  .amcharts-axis-label {
+    transform: translateX(12);
+  }
+}
+
+.chart-ballon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+
+  color: #898989;
+  font-size: 10px;
+
+  background-color: $body;
+  border-radius: 5px;
+
+  .date {
+    margin-bottom: 10px;
+
+    color: #bebebe;
+  }
+
+  .series {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: #5b5b5b;
+  }
+
+  .series .serie {
+    padding: 0 10px;
+
+    border-left: 1px solid #5b5b5b;
+  }
+
+  /* stylelint-disable selector-max-compound-selectors */
+  .series .serie .serie-title {
+    color: #838383;
+
+    text-align: center;
+    
+    text-transform: uppercase;
+  }
+
+  .series .serie .serie-percent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    color: #d5d5d5;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .series .serie .serie-percent .percent-number {
+    margin-left: 5px;
+  }
+  /* stylelint-enable selector-max-compound-selectors */
+
+  .series .serie:first-child {
+    border-left: 0 !important;
+  }
+}
+
+$sm-size: 6px;
+$md-size: 12px;
+$lg-size: 18px;
+
+.arrow-variation {
+  width: 0;
+  height: 0;
+}
+
+.zero {
+  &.lg {
+    width: $lg-size;
+    height: $lg-size;
+  }
+
+  &.md {
+    width: $md-size;
+    height: $md-size;
+  }
+
+  &.sm {
+    width: $sm-size;
+    height: $sm-size;
+  }
+}
+
+.positive-arrow {
+  border-color: transparent transparent $positive transparent;
+  border-style: none solid solid;
+
+  &.lg {
+    border-width: 0 ($lg-size/2) $lg-size ($lg-size/2);
+  }
+
+  &.md {
+    border-width: 0 ($md-size/2) $md-size ($md-size/2);
+  }
+
+  &.sm {
+    border-width: 0 ($sm-size/2) $sm-size ($sm-size/2);
+  }
+}
+
+.negative-arrow {
+  border-color: $negative transparent transparent transparent;
+  border-style: solid solid none;
+
+  &.lg {
+    border-width: $lg-size ($lg-size/2) 0 ($lg-size/2);
+  }
+
+  &.md {
+    border-width: $md-size ($md-size/2) 0 ($md-size/2);
+  }
+
+  &.sm {
+    border-width: $sm-size ($sm-size/2) 0 ($sm-size/2);
+  }
+}
