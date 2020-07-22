@@ -11,7 +11,7 @@
 }
 
 .amcharts-graph-bullet {
-  fill: $body;
+  fill: $extra-dark-gray;
   stroke: #ededed;
   stroke-opacity: 0;
 
@@ -35,16 +35,16 @@
   height: 100%;
   padding: 5px;
 
-  color: #898989;
+  color: $dark-gray;
   font-size: 10px;
 
-  background-color: $body;
+  background-color: $extra-dark-gray;
   border-radius: 5px;
 
   .date {
     margin-bottom: 10px;
 
-    color: #bebebe;
+    color: #dbdcdd;
   }
 
   .series {
@@ -53,18 +53,18 @@
     align-items: center;
     justify-content: center;
 
-    color: #5b5b5b;
+    color: map-get($neutral-colors, 'dark');
   }
 
   .series .serie {
     padding: 0 10px;
 
-    border-left: 1px solid #5b5b5b;
+    border-left: 1px solid map-get($neutral-colors, 'dark');
   }
 
   /* stylelint-disable selector-max-compound-selectors */
   .series .serie .serie-title {
-    color: #838383;
+    color: $dark-gray;
 
     text-align: center;
     
@@ -77,7 +77,7 @@
     align-items: center;
     justify-content: center;
 
-    color: #d5d5d5;
+    color: map-get($neutral-colors, 'light');
     font-weight: bold;
     font-size: 12px;
   }
