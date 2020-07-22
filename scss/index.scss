@@ -3,15 +3,20 @@
 // use npm run build to test it
 // use npm run dev while you're writing your scss file
 
-@import 'colors-classes';
+@import 'themes/angular-material';
+@import 'charts';
 @import 'colors';
+@import 'colors-classes';
+@import 'colors-mixins';
 @import 'global';
 @import 'mat-calendar';
 @import 'mat-checkbox';
 @import 'mat-dialog';
 @import 'mat-field';
+@import 'mat-select';
 @import 'mat-spinner';
 @import 'mat-table';
 @import 'mat-tooltip';
 @import 'reboot';
+@import 'skeleton';
 @import 'typograph';

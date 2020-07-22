@@ -1,9 +1,9 @@
-@import 'src/styles/colors';
+@import 'colors';
 
 .skeleton {
   position: relative;
 
-  background-color: $backgroundDefault;
+  background-color: $base-background;
   border-radius: 0;
 
   &::after {
