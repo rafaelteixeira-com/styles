@@ -1,24 +1,21 @@
 @import '../mixins';
 @import '../variables';
 
-$gorilaDarkBg: $extra-dark-gray;
-$gorilaFontColor: $white;
-
 .tippy-popper {
   @each $placement in $placements {
     &[x-placement^='#{$placement}'] {
       .tippy-tooltip.gorila-dark-theme {
         .tippy-arrow {
-          @include arrow($placement, 8px, #333);
+          @include arrow($placement, 8px, $extra-dark-gray);
         }
       }
     }
   }
 
   .tippy-tooltip.gorila-dark-theme {
-    color: $gorilaFontColor;
+    color: $white;
 
-    background-color: $gorilaDarkBg;
+    background-color: $extra-dark-gray;
     border-radius: 5px;
   }
 
@@ -32,17 +29,17 @@ $gorilaFontColor: $white;
 }
 
 .tippy-popper[x-placement^='bottom'] .tippy-tooltip.gorila-gray-theme .tippy-arrow {
-  border-bottom: 8px solid $gorilaDarkBg !important;
+  border-bottom: 8px solid $extra-dark-gray !important;
 }
 
 .tippy-popper[x-placement^='top'] .tippy-tooltip.gorila-gray-theme .tippy-arrow {
-  border-top: 8px solid $gorilaDarkBg !important;
+  border-top: 8px solid $extra-dark-gray !important;
 }
 
 .tippy-popper[x-placement^='left'] .tippy-tooltip.gorila-gray-theme .tippy-arrow {
-  border-left: 8px solid $gorilaDarkBg !important;
+  border-left: 8px solid $extra-dark-gray !important;
 }
 
 .tippy-popper[x-placement^='right'] .tippy-tooltip.gorila-gray-theme .tippy-arrow {
-  border-right: 8px solid $gorilaDarkBg !important;
+  border-right: 8px solid $extra-dark-gray !important;
 }
