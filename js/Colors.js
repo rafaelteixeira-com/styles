@@ -20,6 +20,8 @@ export default {
     CurrencySecondary: '#ffd364',
     TangiblePrimary: '#d15130',
     TangibleSecondary: '#e05f3e',
+    OffshorePrimary: '#ff6b6b',
+    OffshoreSeconday: '#ff8080',
     CashPrimary: '#314a61',
     CashSecondary: '#456888',
     Positive: '#75b629',
