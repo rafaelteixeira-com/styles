@@ -457,6 +457,72 @@ $mat-gorila-tangible-accent: (
   )
 );
 
+$mat-gorila-offshore-primary: (
+  50 : #ffeded,
+  100 : #ffd3d3,
+  200 : #ffb5b5,
+  300 : #ff9797,
+  400 : #ff8181,
+  500 : #ff6b6b,
+  600 : #ff6363,
+  700 : #ff5858,
+  800 : #ff4e4e,
+  900 : #ff3c3c,
+  A100 : #fff,
+  A200 : #fff,
+  A400 : #ffe5e5,
+  A700 : #ffcbcb,
+  contrast: (
+    50 : #000,
+    100 : #000,
+    200 : #000,
+    300 : #000,
+    400 : #000,
+    500 : #000,
+    600 : #000,
+    700 : #000,
+    800 : #000,
+    900 : #fff,
+    A100 : #000,
+    A200 : #000,
+    A400 : #000,
+    A700 : #000,
+  )
+);
+
+$mat-gorila-offshore-accent: (
+  50 : #fff0f0,
+  100 : #ffd9d9,
+  200 : #ffc0c0,
+  300 : #ffa6a6,
+  400 : #ff9393,
+  500 : #ff8080,
+  600 : #ff7878,
+  700 : #ff6d6d,
+  800 : #ff6363,
+  900 : #ff5050,
+  A100 : #fff,
+  A200 : #fff,
+  A400 : #fff6f6,
+  A700 : #ffdcdc,
+  contrast: (
+    50 : #000,
+    100 : #000,
+    200 : #000,
+    300 : #000,
+    400 : #000,
+    500 : #000,
+    600 : #000,
+    700 : #000,
+    800 : #000,
+    900 : #000,
+    A100 : #000,
+    A200 : #000,
+    A400 : #000,
+    A700 : #000,
+  )
+);
+
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
@@ -534,4 +600,13 @@ $gorila-app-tangible-theme: mat-light-theme($gorila-app-tangible-primary, $goril
 
 .tangible-theme {
   @include angular-material-theme($gorila-app-tangible-theme);
+}
+
+$gorila-app-offshore-primary: mat-palette($mat-gorila-offshore-primary);
+$gorila-app-offshore-accent: mat-palette($mat-gorila-offshore-accent, A200, A100, A400);
+$gorila-app-offshore-warn: mat-palette($mat-red);
+$gorila-app-offshore-theme: mat-light-theme($gorila-app-offshore-primary, $gorila-app-offshore-accent, $gorila-app-offshore-warn);
+
+.offshore-theme {
+  @include angular-material-theme($gorila-app-offshore-theme);
 }

@@ -17,6 +17,8 @@ $cash-primary: #314a61;
 $cash-secondary: #456888;
 $tangible-primary: #df5e3d;
 $tangible-secondary: #e05f3e;
+$offshore-primary: #ff6b6b;
+$offshore-seconday: #ff8080;
 $benchmark-primary: #777878;
 $benchmark-secondary: #a3a5a6;
 $positive: #75b629;
@@ -54,6 +56,7 @@ $asset-colors-primary: (
   default: $gorila-primary,
   fixed_income: $fixed-income-primary,
   multimarket: $multimarket-primary,
+  offshore: $offshore-primary,
   stocks: $stocks-primary,
   tangible: $tangible-primary,
 );
@@ -64,6 +67,7 @@ $asset-colors-secondary: (
   default: $gorila-secondary,
   fixed_income: $fixed-income-secondary,
   multimarket: $multimarket-secondary,
+  offshore: $offshore-secondary,
   stocks: $stocks-secondary,
   tangible: $tangible-secondary,
 );
