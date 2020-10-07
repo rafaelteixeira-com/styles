@@ -28,6 +28,10 @@
     background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
   }
 
+  &.offshore {
+    background-color: rgba(map-get($asset-colors-primary, offshore), $opacity-primary) !important;
+  }
+
   &.benchmark {
     background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
   }
