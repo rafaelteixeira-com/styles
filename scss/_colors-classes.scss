@@ -29,6 +29,10 @@
     color: map-get($asset-colors-primary, tangible) !important;
   }
 
+  &.offshore {
+    color: map-get($asset-colors-primary, offshore) !important;
+  }
+
   &.benchmark {
     color: map-get($asset-colors-primary, benchmark) !important;
   }
@@ -86,6 +90,10 @@
     background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-primary) !important;
   }
 
+  &.offshore:not(.secondary)::before {
+    background-color: rgba(map-get($asset-colors-primary, offshore), $opacity-primary) !important;
+  }
+
   &.benchmark:not(.secondary)::before {
     background-color: rgba(map-get($asset-colors-primary, benchmark), $opacity-primary) !important;
   }
@@ -115,8 +123,12 @@
     background-color: rgba(map-get($asset-colors-primary, stocks), $opacity-secondary) !important;
   }
 
-  &.tangible::before {
+  &.tangible.secondary::before {
     background-color: rgba(map-get($asset-colors-primary, tangible), $opacity-secondary) !important;
+  }
+
+  &.offshore.secondary::before {
+    background-color: rgba(map-get($asset-colors-primary, offshore), $opacity-secondary) !important;
   }
 
   &.benchmark.secondary::before {
@@ -161,6 +173,10 @@
   &.tangible {
     @include generate-asset-gradient(tangible);
   }
+
+  &.offshore {
+    @include generate-asset-gradient(offshore);
+  }
 }
 
 .animated-asset-gradient {
@@ -201,5 +217,9 @@
 
   &.tangible {
     @include generate-animated-asset-gradient(tangible);
+  }
+
+  &.offshore {
+    @include generate-animated-asset-gradient(offshore);
   }
 }
